@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+
 body {
   font-size: 14px;
 }
@@ -8,6 +11,9 @@ header, main, footer {
   border: solid 5px #CCCCCC;
 }
 h1 {
+  fontsize: 3em;
+  font-family:"Black Han Sans", sans-serif;
+  fontweith: nomal;
   color: green; 
   background-color: lightpink;
   border: solid 2px red;
@@ -36,6 +42,8 @@ article[id="m2"] {
 
 div::before {
  content: '[영화소개]' ;
+  font-family: sans-serif;
+  font-size: 0.8em;
   font-weight: 900;
   color: darkgreen;
 }
@@ -46,6 +54,11 @@ div::after {
   color: darkgreen;
 }
 
+article div {
+  background-color: lightgrey;
+  padding: 15px 5px 10px 5px;
+  margin-bottom: 20px;
+}
 a {
   text-decoration: none;
   color:darkred;
@@ -61,6 +74,16 @@ a:hover {
 }
 
 a:active {
-  background-color: darkred;
+  background-color: rgba(0,255,0.2);
   color: white
+}
+
+article: nth-child(2) {
+  background-color: lightgreen;
+}
+
+h3{
+  font-family: "Do Hyeon", sans-serif;
+  font-size: 1.5em;
+  
 }
